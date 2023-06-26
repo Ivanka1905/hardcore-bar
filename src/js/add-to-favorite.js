@@ -1,9 +1,6 @@
-// const { data } = require('infinite-scroll');
-
 const testToHome = document.querySelector(
   '#header > div > div.header__menu.header__menu--is-hidden > nav > ul > li.header__nav-item.header__nav-item--menu'
 );
-// console.log(testToHome);
 
 const headerHomeBtn = document.querySelector('.header__nav-item');
 const catalogueListFavoriteCocktails = document.querySelector(
@@ -18,11 +15,8 @@ const catalogueListRef = document.querySelector('.catalogue__list');
 if (catalogueListRef) {
   catalogueListRef.addEventListener('mousedown', onClickBtn);
 }
-// headerHomeBtn.addEventListener('click', onHomeBtnClickEvent);
 
-// function onHomeBtnClickEvent() {
-//   console.log('knock');
-// }
+
 let randomCardsGallery = '';
 let htmlCoctailCard = '';
 
@@ -34,8 +28,6 @@ function onClickBtn(e) {
     for (let i = 0; i < randomCardsGallery.length; i++) {
       BtnToFavoriteCocktails = // Визначаємо де кнопка
         randomCardsGallery[i].children[1].children[1].children[1];
-      // console.log(BtnToFavoriteCocktails);
-      // console.log(randomCardsGallery[i]);
 
       BtnToFavoriteCocktails.addEventListener('click', allCocktailsMap); // Слухач по кліку
       e.target.childNodes[0].data = 'Remove'; // При натисканні на кнопку заміняємо слова
@@ -46,7 +38,6 @@ function onClickBtn(e) {
         htmlCoctailCard = new XMLSerializer().serializeToString(
           randomCardsGallery[i] // Масив об'єктів
         );
-        // Перевірка якщо елемент не є в масиві
         if (!favoriteCocktailsEl.includes(htmlCoctailCard)) {
           favoriteCocktailsEl.push(htmlCoctailCard); // Пушим його в масив
 
