@@ -9,12 +9,6 @@ const ifNotIngridientsText = document.querySelector(
 const onClickFavoriteIngridientsBtnNav = document.querySelector(
   '#header > div > div.header__favorite-box > ul > li:nth-child(2)'
 );
-// console.dir(
-//   ifNotIngridients,
-//   ifNotIngridientsText,
-//   onClickFavoriteIngridientsBtnNav
-// );
-// console.log(ifNotIngridients.children.length);
 
 onClickFavoriteIngridientsBtnNav.addEventListener(
   'click',
@@ -22,13 +16,11 @@ onClickFavoriteIngridientsBtnNav.addEventListener(
 );
 
 function onClickEmptyListOnFavoriteIngridients() {
-  // console.log('hi');
   if (ifNotIngridients.children.length === 0) {
     ifNotIngridientsText.style.display = 'none';
     ifNotIngridients.insertAdjacentHTML(
       'beforeend',
       noFindFavoriteIngridients()
     );
-    // console.log('it is true');
   }
 }

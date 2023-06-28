@@ -1,4 +1,3 @@
-// import debounce from 'lodash.debounce';
 const debounce = require('lodash.debounce');
 const refsFavorite = {
   favoriteMenu: document.querySelector('.header__favorite-box'),

@@ -18,15 +18,3 @@ function onClickMenuButton() {
   favoriteMenuEl.classList.add('header__favorite-box--is-hidden');
   inputIsHidden.classList.toggle('inputMenu--is-hidden');
 }
-
-// refsMenu.headerBtnMenu.addEventListener('mouseover', onMenuBtnMouseOver);
-// refsMenu.headerBtnMenu.addEventListener('mouseout', onMenuBtnMouseOut);
-
-// function onMenuBtnMouseOver() {
-//   refsMenu.headerIconMenu.style.fill = '#fd5103';
-//   refsMenu.headerIconMenuClose.style.fill = '#fd5103';
-// }
-// function onMenuBtnMouseOut() {
-//   refsMenu.headerIconMenu.style.fill = 'black';
-//   refsMenu.headerIconMenuClose.style.fill = 'black';
-// }
