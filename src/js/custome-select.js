@@ -17,23 +17,17 @@ refs.selectBtn.addEventListener('click', () => {
 });
 
 function onItemClick(e) {
-  // console.log(e.target.dataset.value);
-
   let text = e.target.dataset.value;
   refs.selectBtnText.textContent = text;
   refs.selectBody.classList.add('is-hidden-hero');
 }
 
-// const refsGallery = {
-//   catalogueList: document.querySelector('.catalogue__list'),
-// };
 
 const getData = new getApiData();
 
 refs.selectBody.addEventListener('click', getSearchCocktailFirstLetter);
 
 async function getSearchCocktailFirstLetter(e) {
-  // console.log(e.target.dataset.value);
   getData.value = e.target.dataset.value;
 
   if (getData.value) {
