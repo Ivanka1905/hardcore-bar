@@ -1,5 +1,4 @@
 .select {
-  // мобильная версия
   @include mobile {
     position: relative;
     margin: 0 auto;
@@ -29,7 +28,6 @@
       display: none;
     }
   }
-  // кнопка ховер
   &__btn:hover {
     background-color: $colorFontPrimary;
   }
